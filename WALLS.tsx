@@ -2,7 +2,7 @@
 <tileset version="1.2" tiledversion="1.3.4" name="walls" tilewidth="32" tileheight="32" tilecount="9" columns="3">
  <image source="walls.png" width="96" height="96"/>
  <terraintypes>
-  <terrain name="New Terrain" tile="8"/>
+  <terrain name="default" tile="4"/>
  </terraintypes>
  <tile id="0" terrain=",,,0"/>
  <tile id="1" terrain=",,0,0"/>
