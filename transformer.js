@@ -5,7 +5,7 @@ fs.readdirSync(".").forEach(_ => {
         const o = JSON.parse(fs.readFileSync(_, "utf8"));
 
         const map = fs.createWriteStream(_.replace(".json", ".map"));
-        map.write(`${o.width}\n${o.height}\n${o.layers[0].data.join("\n")}`);
+        map.write(`[${o.width},${o.height},${o.layers[0].data.join(",")}]`);
         map.close();
     }
 })
